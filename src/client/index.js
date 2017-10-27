@@ -3,6 +3,10 @@ import ReactDom from 'react-dom';
 import SongList from './SongList';
 import Header from './Header';
 import styles from './app.css';
+import reset from './reset.css';
+import {Provider} from 'react-redux';
+import store from './redux/createStore';
+
 
 const songs=[
 {name:"Wish you were here"},
@@ -24,7 +28,9 @@ return(
 
 
 ReactDom.render(
-<App/>,
+	<Provider store ={store}>
+<App/>
+</Provider>,
 document.getElementById('root')
 );
 

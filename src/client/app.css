@@ -12,7 +12,9 @@
     height: 50px;
     background: black;
     color: white;
-    text-align: center;
-    padding-top: 15px;
     font-size: 30px;
+
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
 }
